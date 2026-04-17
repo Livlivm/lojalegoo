@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja LEGO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>LEGO Majestic</h1>
+  <button onclick="abrirModal()">+ Adicionar Produto</button>
+</header>
+
+<main>
+  <div id="produtos" class="grid"></div>
+</main>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Novo Produto</h2>
+
+    <input id="nome" placeholder="Nome">
+    <input id="imagem" placeholder="Imagem (URL)">
+    <input id="preco" type="number" placeholder="Preço">
+    <input id="categoria" placeholder="Categoria">
+    <input id="marca" placeholder="Marca">
+
+    <button onclick="cadastrar()">Salvar</button>
+    <button onclick="fecharModal()">Cancelar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
